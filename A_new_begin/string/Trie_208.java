@@ -1,94 +1,64 @@
-class Solution {
-    
-    //鬼知道java的字符串有startWith这个功能。。。
-    public String replaceWords(List<String> dict, String sentence) {
-        String[] ss = sentence.split(" ");
-        for(int i = 0;i< ss.length;i++){
-            for(String s:dict){
-                if(ss[i].startsWith(s)){
-                    ss[i] = s;
-                    break;
-                }
-            }
-        }
-//         StringBuilder sb = new StringBuilder();
-//         for(int i = 0;i < ss.length;i++){
-//             sb.append(ss[i]);
-//             if(i != ss.length -1){
-//                  sb.append(" ");
-//             }
-           
-//         }
-        
-        return String.join(" ",ss);
+class Trie {
+
+    private TrieNode root;
+
+    /** Initialize your data structure here. */
+    public Trie() {
+        root = new TrieNode();
     }
-    
-    
-    //开始自己写的一个前缀树版本居然945ms，用的太重了
-//     private TrieNode root = new TrieNode();
-    
-//     public String replaceWords(List<String> dict, String sentence) {
-//         String[] sub = sentence.split(" ");
-//         int len = sub.length;
-//         StringBuilder res = new StringBuilder();
-//         for(int i=0;i<len;i++){
-//             String mid = isTarget(dict, sub[i]);
-//             if(i==len-1){
-//                 if(mid!=""){
-//                     res.append(mid);
-//                 }
-//                 else{
-//                     res.append(sub[i]);
-//                 }
-//                 break;
-//             }
-//             if(mid!=""){
-//                 res.append(mid);
-//                 res.append(" ");
-//             }
-//             else{
-//                 res.append(sub[i]);
-//                 res.append(" ");
-//             }
-//         }
-//         return res.toString();
-        
-//     }
-    
-//     public void initTrie(List<String> dict){
-//         for(String pres:dict){
-//             TrieNode node = root;
-//             for(char key:pres.toCharArray()){
-//                 if(node.children[key-'a']==null){
-//                     node.children[key-'a'] = new TrieNode();
-//                 }
-//                 node = node.children[key-'a'];
-//             }
-//             node.val = pres;
-//         }
-//     }
-    
-//     public String isTarget(List<String> dict, String str){
-//         initTrie(dict);
-//         TrieNode node = root;
-//         for(char key:str.toCharArray()){
-//             if(node.children[key-'a']==null&&node.val==""){
-//                 return "";
-//             }
-//             if(node.val!=""){return node.val;}
-//             node = node.children[key-'a'];
-//         }
-//         return node.val;
-//     }
+
+    /** Inserts a word into the trie. */
+    public void insert(String word) {
+        TrieNode node = root;
+        char[] slip = word.toCharArray();
+        for(char key:slip){
+            if(node.children[key-'a']==null){
+                node.children[key-'a'] = new TrieNode();
+            }
+            node = node.children[key-'a'];
+        }
+        node.val = word;
+    }
+
+    /** Returns if the word is in the trie. */
+    public boolean search(String word) {
+        TrieNode node = root;
+        char[] slip = word.toCharArray();
+        for(char key:slip){
+            if(node.children[key-'a']==null){
+                return false;
+            }
+            node = node.children[key-'a'];
+        }
+        return node.val.equals(word);
+    }
+
+    /** Returns if there is any word in the trie that starts with the given prefix. */
+    public boolean startsWith(String prefix) {
+        TrieNode node = root;
+        char[] slip = prefix.toCharArray();
+        for(char key:slip){
+            if(node.children[key-'a']==null){
+                return false;
+            }
+            node = node.children[key-'a'];
+        }
+        return true;
+    }
 }
 
-
-
-// class TrieNode {
-//     public String val;
-//     public TrieNode[] children;
-//     public TrieNode(){
-//         val = "";
-//         children = new TrieNode[26];
-//     }
-// }
+/**
+ * Your Trie object will be instantiated and called as such:
+ * Trie obj = new Trie();
+ * obj.insert(word);
+ * boolean param_2 = obj.search(word);
+ * boolean param_3 = obj.startsWith(prefix);
+ */
+class TrieNode{
+    public String val;
+    public TrieNode[] children;
+    public TrieNode(){
+        val = "";
+        children = new TrieNode[26];
+    }
+}
