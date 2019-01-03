@@ -1,12 +1,18 @@
-
-
-class WordDictionary {
+/**
+ * @author: lblade
+ * @Date: Created in 3:01 PM 2019/1/3
+ */
+public class WordDictionary {
 
     private TrieNode root;
 
     /** Initialize your data structure here. */
     public WordDictionary() {
         root = new TrieNode();
+    }
+
+    public TrieNode getRoot() {
+        return root;
     }
 
     /** Adds a word into the data structure. */
@@ -34,7 +40,10 @@ class WordDictionary {
         for(int i=0;i<slip.length;i++){
             if(slip[i]=='.'){
                 for(TrieNode child:node.children){
+//                    System.out.println(word.substring(i+1));
+                    System.out.println("::"+search(word.substring(i+1),child));
                     if(search(word.substring(i+1),child)){
+                        System.out.println("111");
                         return true;
                     }
                 }
@@ -48,20 +57,5 @@ class WordDictionary {
         }
         return word.equals(node.val);
     }
+
 }
-
-/**
- * Your WordDictionary object will be instantiated and called as such:
- * WordDictionary obj = new WordDictionary();
- * obj.addWord(word);
- * boolean param_2 = obj.search(word);
- */
-
-//class TrieNode {
-//    public String val;
-//    public TrieNode[] children;
-//    public TrieNode(){
-//        val = "";
-//        children = new TrieNode[26];
-//    }
-//}
