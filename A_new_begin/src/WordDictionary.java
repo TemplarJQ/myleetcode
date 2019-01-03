@@ -40,7 +40,7 @@ public class WordDictionary {
         for(int i=0;i<slip.length;i++){
             if(slip[i]=='.'){
                 for(TrieNode child:node.children){
-//                    System.out.println(word.substring(i+1));
+                    System.out.println(word.substring(i+1));
                     System.out.println("::"+search(word.substring(i+1),child));
                     if(search(word.substring(i+1),child)){
                         System.out.println("111");
