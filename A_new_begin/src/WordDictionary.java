@@ -21,7 +21,8 @@ public class WordDictionary {
         char[] slip = word.toCharArray();
         int cur_level = 0;
         for(char key:slip){
-            node.level = cur_level;
+//            node.level = cur_level;
+            //这个条件必须注释掉，不然长度不够无法判断，初始化的root的节点都是-1
             cur_level++;
             if(node.children[key-'a']==null){
                 node.children[key-'a'] = new TrieNode();

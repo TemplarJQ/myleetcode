@@ -8,7 +8,7 @@ public class TrieNode {
     public int level;
     public TrieNode(){
         val = "";
-        level = 0;
+        level = -1;
         children = new TrieNode[26];
     }
 }
