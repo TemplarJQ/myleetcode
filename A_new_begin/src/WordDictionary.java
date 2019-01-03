@@ -41,9 +41,11 @@ public class WordDictionary {
             if(slip[i]=='.'){
                 for(TrieNode child:node.children){
                     System.out.println(word.substring(i+1));
+                    if(child!=null){
+                        System.out.println("i am fine.");
+                    }
                     System.out.println("::"+search(word.substring(i+1),child));
                     if(search(word.substring(i+1),child)){
-                        System.out.println("111");
                         return true;
                     }
                 }
@@ -55,7 +57,8 @@ public class WordDictionary {
                 node = node.children[slip[i]-'a'];
             }
         }
-        return word.equals(node.val);
+        //这里千万注意，不能返回这个条件，因为如果切成了ad，那么就不可能和最后的bad重合。
+        return true;
     }
 
 }
