@@ -1,5 +1,10 @@
 # myleetcode
 
+--2019.1.3打卡--
+
+![今天成功解决的一波前缀树应用题，反反复复找bug，还好没放弃](https://github.com/TemplarJQ/myleetcode/blob/master/readme_pic/2019_1_3_success.jpg)
+今天就把这个题解决了，但是很开心woc
+
 --2019.1.2打卡--
 
 现在的进度是162/799，简单105，中等56，困难4，但是还有很多东西没有做完。
