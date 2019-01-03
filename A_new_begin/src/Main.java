@@ -14,9 +14,19 @@ public class Main {
         //测试trie_211
 
         WordDictionary trienode = new WordDictionary();
-        trienode.addWord("bad");
-        trienode.addWord("mad");
-        trienode.addWord("dad");
+//        trienode.addWord("bad");
+//        trienode.addWord("mad");
+//        trienode.addWord("dad");
+
+//        trienode.addWord("a");
+
+
+        trienode.addWord("at");
+        trienode.addWord("and");
+        trienode.addWord("an");
+        trienode.addWord("add");
+
+
 
         //毫无毛病，三个分支都得到了有效建立
 //        TrieNode rep = trienode.getRoot();
@@ -31,7 +41,15 @@ public class Main {
 //                }
 //            }
 //        }
-        System.out.println(trienode.search("pad"));
-        System.out.println(trienode.search(".ad"));
+//        System.out.println(trienode.search("pad"));
+//        System.out.println(trienode.search(".ad"));
+
+//        System.out.println(trienode.search("a"));
+//        System.out.println(trienode.search("."));
+//        System.out.println(trienode.search("a."));
+//        System.out.println(trienode.search(".a"));
+
+        System.out.println(trienode.search("a"));
+
     }
 }

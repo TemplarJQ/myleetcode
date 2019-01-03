@@ -5,8 +5,10 @@
 public class TrieNode {
     public String val;
     public TrieNode[] children;
+    public int level;
     public TrieNode(){
         val = "";
+        level = 0;
         children = new TrieNode[26];
     }
 }
