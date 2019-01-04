@@ -1,5 +1,9 @@
 # myleetcode
 
+--2019.1.4打卡--
+
+今天上午做这个153的二分法太sb了，算了半天，将近1.5h，时间效率并没有提升多少，但是分清楚了一个道理，二分法并不是回溯和递归，是要使用left和right指针交替进行的。
+
 --2019.1.3打卡--
 
 ![今天成功解决的一波前缀树应用题，反反复复找bug，还好没放弃](https://github.com/TemplarJQ/myleetcode/blob/master/readme_pic/2019_1_3_success.jpg)
