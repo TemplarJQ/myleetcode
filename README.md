@@ -3,7 +3,8 @@
 --2019.1.6打卡--
 
 今天刷了2简单2中等，学了一种二维数组的右上角遍历方法，剑指面试-4，也就是leetcode74的题目，但是结果并不明显，应该是和样例有很大的关系。
-！[剑指offer面试题4](https://github.com/TemplarJQ/myleetcode/blob/master/readme_pic/leetcode_74.jpeg)
+！[剑指offer面试题4]
+(https://github.com/TemplarJQ/myleetcode/blob/master/readme_pic/leetcode_74.jpeg)
 
 
 --2019.1.5打卡--
