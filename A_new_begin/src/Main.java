@@ -2,12 +2,28 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] nums = {4,5,6,7,0,1,2};
-        int[] nums2 = {3,4,1,2};
-        int len = nums.length;
-        int mid = len/2;
-        System.out.println(len/2);
-        System.out.println("mid:"+mid);
+
+
+
+
+        //        Greedy_861 t =  new Greedy_861();
+//        int[][] A = {{0,0,1,1}, {1,0,1,0}, {1,1,0,0}};
+////        int[][] A = {{0,1}, {0,1}, {0,1}, {0,0}};
+//        int res = t.matrixScore(A);
+//        for(int i=0;i<A.length;i++){
+//            for(int j=0;j<A[0].length;j++){
+//                System.out.print(A[i][j]+" ");
+//            }
+//            System.out.println();
+//        }
+//        System.out.println("res:"+res);
+
+//        int[] nums = {4,5,6,7,0,1,2};
+//        int[] nums2 = {3,4,1,2};
+//        int len = nums.length;
+//        int mid = len/2;
+//        System.out.println(len/2);
+//        System.out.println("mid:"+mid);
 
 
 //        String str = "dad";
