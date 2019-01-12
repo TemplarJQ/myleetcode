@@ -6,7 +6,7 @@
 昨天好像只刷了2道，今天勤快一点刷上三道，找个难一点的问题下手。\
 821是个简单题，但是两种不同思想还是很有意思，可能和它的测试用例有关系吧，最快的果然是个dp。\
 109这个题有点垃圾的。。。我还是没学会这种头尾的遍历递归方法，用数组角标来做太容易出问题了。\
-![角标遍历方法](https://github.com/TemplarJQ/myleetcode/blob/master/readme_pic/sortedListToBST_109.jpg)
+![角标遍历方法](https://github.com/TemplarJQ/myleetcode/blob/master/readme_pic/sortedListToBST_109.jpg)\
 这个方法得学会啊。
 
 
