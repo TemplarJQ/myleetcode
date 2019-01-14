@@ -3,6 +3,8 @@
 --2019.1.14打卡--
 
 每天起床第一句，先给自己刷道题。\
+今天做个并查集的959，这个题还是很有意思的。
+![959并查集内容](https://github.com/TemplarJQ/myleetcode/blob/master/readme_pic/959_bingcha.jpg)
 
 
 --2019.1.13打卡--
