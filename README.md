@@ -4,7 +4,11 @@
 
 每天起床第一句，先给自己刷道题。\
 今天做个并查集的959，这个题还是很有意思的。
-![959并查集内容](https://github.com/TemplarJQ/myleetcode/blob/master/readme_pic/959_bingcha.jpg)
+![959并查集内容](https://github.com/TemplarJQ/myleetcode/blob/master/readme_pic/959_bingcha.jpg)\
+晚上是一道外星字典953，还是挺有意思的，没有看起来那么简单。\
+然后因为之前做的一道题目解法被人赞牛逼了，hhhhhhh，太高兴了。\
+![被赞](https://github.com/TemplarJQ/myleetcode/blob/master/readme_pic/zan.jpg)
+
 
 
 --2019.1.13打卡--
