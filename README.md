@@ -1,5 +1,24 @@
 # myleetcode
 
+--2019.1.15打卡--
+
+昨天的959还没有做完，今天接着写。\
+今天这个406“根据身高重建队列”其实还是蛮有意思的。\
+```
+Arrays.sort(people, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                if(o1[0] == o2[0]){
+                    return o1[1] - o2[1];
+                }
+                return o2[0] - o1[0];
+            }
+        });
+ ```
+ 对Arrays.sort使用了一种重排手段，很有意思。
+
+
+
 --2019.1.14打卡--
 
 每天起床第一句，先给自己刷道题。\
