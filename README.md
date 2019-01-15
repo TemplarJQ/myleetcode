@@ -5,6 +5,28 @@
 昨天的959还没有做完，今天接着写。\
 今天这个406“根据身高重建队列”其实还是蛮有意思的。\
 ```
+/*
+7	0	
+7	1	
+6	1	
+5	0	
+5	2	
+4	4
+
+x	y
+5	0
+7	0
+5	2
+6	1
+4	4
+7	1
+
+1.h降序，n升序(次)排序 (或直接以h*1000-n降序排序)
+2.依次以n为下标插入
+每次插入时
+在序列中的所有元素，都不小于当前元素，且保证n较小的元素被包括在<=当前元素的序列内
+*/
+
 Arrays.sort(people, new Comparator<int[]>() {
             @Override
             public int compare(int[] o1, int[] o2) {
@@ -17,6 +39,14 @@ Arrays.sort(people, new Comparator<int[]>() {
  ```
  对Arrays.sort使用了一种重排手段，这道题其实还是蛮难的，看看其他解法都还是量挺大的。\
  这个大兄弟的解法里面List<int\[]>这种手法还是第一次见到。\
+ ```
+ List<int[]> tmp = new ArrayList<>();
+        for(int i = 0;i < n;i++){
+            tmp.add(people[i][1],new int[]{people[i][0],people[i][1]});
+        }
+ ```
+ 学习了
+ 
 
 
 
