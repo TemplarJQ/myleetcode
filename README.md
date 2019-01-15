@@ -15,7 +15,8 @@ Arrays.sort(people, new Comparator<int[]>() {
             }
         });
  ```
- 对Arrays.sort使用了一种重排手段，很有意思。
+ 对Arrays.sort使用了一种重排手段，这道题其实还是蛮难的，看看其他解法都还是量挺大的。\
+ 这个大兄弟的解法里面List<int\[]>这种手法还是第一次见到。\
 
 
 
