@@ -3,7 +3,7 @@
 --2019.1.15打卡--
 
 昨天的959还没有做完，今天接着写。\
-今天这个406“根据身高重建队列”其实还是蛮有意思的。\
+今天这个406“根据身高重建队列”其实还是蛮有意思的。
 ```
 Arrays.sort(people, new Comparator<int[]>() {
             @Override
@@ -16,7 +16,7 @@ Arrays.sort(people, new Comparator<int[]>() {
         });
  ```
  对Arrays.sort使用了一种重排手段，这道题其实还是蛮难的，看看其他解法都还是量挺大的。\
- 这个大兄弟的解法里面List<int\[]>这种手法还是第一次见到。\
+ 这个大兄弟的解法里面List<int\[]>这种手法还是第一次见到。
  ```
  List<int[]> tmp = new ArrayList<>();
         for(int i = 0;i < n;i++){
