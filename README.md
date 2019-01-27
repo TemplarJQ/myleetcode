@@ -1,11 +1,17 @@
 # 刷算法要坚持三年的，只要学技术就要一直刷下去。
 
+--2019.1.27打卡--
+
+回家第一天，昨儿晚上刚到家，今天开始正式刷题啦，加油。
+
+
+
 --2019.1.24打卡--
 
 放假前的图书馆，国院的同学也都走了，4楼就我一个哈哈。
 ![图书馆2019.1.24](https://github.com/TemplarJQ/myleetcode/blob/master/readme_pic/library2019_1_24.jpeg)
 把活干完。
-
+![离开](https://github.com/TemplarJQ/myleetcode/blob/master/readme_pic/2019_1_24llibrary2.jpeg)
 
 --2019.1.22打卡--
 
