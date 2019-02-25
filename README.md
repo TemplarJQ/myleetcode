@@ -1,5 +1,39 @@
 # 刷算法要坚持三年的，只要学技术就要一直刷下去。
 
+--2019.2.25打卡--
+
+开学第一天。\
+总是觉得自己要学的太多，技术太差，要迎头赶上啊，不能输给别人。\
+数组的题目总的来说就是查找，排序，循环，递归。二分查找额外注意。\
+附一个我印象深刻的东西：\
+```
+public static int part(int[] arr, int low, int high) {
+                int temp = arr[low];
+                while(low<high) {
+                        while(arr[high]>temp&&high>low) {
+                                high--;
+                        }
+                        arr[low] = arr[high];
+                        while(arr[low]<temp&&low<high) {
+                                low++;
+                        }
+                        arr[high] = arr[low];
+                }
+                arr[high] = temp;
+                return high;
+        }
+
+        public  static void quick_sort_go(int[] arr,int low,int high) {
+                if(low>=high) {return ;}
+                int mid = part(arr,low,high);
+                quick_sort_go(arr, low, mid -1);
+                quick_sort_go(arr, mid+1, high);
+        }
+```
+
+
+
+
 --2019.2.24打卡--
 
 今天印象上写了个最近一月的日程安排，必须严格执行了，再往后拖感觉就晚了。\
